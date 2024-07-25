@@ -113,12 +113,14 @@ h1{
     font-size: 60px;
     background-color: black;
     opacity: .7;
-    font-family: Norse;;
+    font-family: Norse;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #png {
     max-width: 20vw;
     max-height: 15vh;
-    border: 2px red solid;
     float: left;
 }
 
@@ -170,4 +172,7 @@ input:focus {
 }
 label {
     font-size: small;
+}
+.inline {
+    border: 3p red solid;
 }
