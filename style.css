@@ -110,7 +110,7 @@ h1{
     text-align: center;
     margin-top: 20vh;
     padding: 30px;
-    font-size: 60px;
+    font-size: 80px;
     background-color: black;
     opacity: .7;
     font-family: Norse;
@@ -157,10 +157,10 @@ button {
     font-size: small;
 }
 
-.form-group.password:invalid {
+input:invalid {
     border: 1px red solid;
 }
-.form-group.password:valid {
+input:valid {
     border:1px black solid;
 }
 input {
@@ -175,4 +175,7 @@ label {
 }
 .inline {
     border: 3p red solid;
+}
+.passwordFormat {
+    font-size: small;
 }
