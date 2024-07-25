@@ -20,41 +20,48 @@
             <p class="paragraph">This is not a real online service! You know you need something like this in your life
                 to help you realize your deepest dreams. Sign up <em>now</em> to get started</p>
 
-            <p class="paragraph">You <em>know</em> you want to</p>
+            <p class="paragraph2">You <em>know</em> you want to</p>
             <fieldset>
-                <legend>Let's Do this!</legend>
-                <!-- <div class="input-wrapper"> -->
+                <legend>Let's Do This!</legend>
                     <div class="wrapper-form">
                         <form action="example.com/push" method="post">
                             <div class="row">
                                 <div class="form-group">
                                     <label for="firstName">First Name</label>
-                                    <input type="text" id="firstName" name="firstName">
+                                    <input type="text" id="firstName" name="firstName" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="lastName">Last Name</label>
-                                    <input type="text" id="lastName" name="lastName">
+                                    <input type="text" id="lastName" name="lastName" required>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-group ">
                                     <label for="email">Email</label>
-                                    <input type="email" id="email" name="email">
-                                    <label for="number">Phone Number</label>
-                                    <input type="text" id="number" name="number">
+                                    <input type="email" id="email" name="email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="number">Phone Number</label>
+                                        <input type="text" id="number" name="number" required>
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="password">Password</label>
-                                    <input type="password" name="password" id="password">
-                                    <label for="passwordConfirm">Confirm Password</label>
-                                    <input type="password" name="passwordConfirm" id="passwordConfirm">
+                                <div class="row">
+                                    <div class="form-group password">
+                                        <label for="password">Password</label>
+                                        <input type="password" name="password" id="password" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="passwordConfirm">Confirm Password</label>
+                                            <input type="password" name="passwordConfirm" id="passwordConfirm" required>
+                                        </div>
+                                    </div>
+                                    <button>create account</button>
+                                    <p class="login">Already have an account? <a href="google.com">Log in</a></p>
                                 </div>
                             </div>
                     </div>
-                <!-- </div> -->
                 </form>
             </fieldset>
-            <button>create account</button>
         </div>
     </div>
     </div>

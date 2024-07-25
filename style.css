@@ -29,6 +29,7 @@ body {
   min-height: 100vh;
   line-height: 1.5;
   margin: 0px;
+  font-family:'Courier New', Courier, monospace;
 }
 
 /* Set shorter line heights on headings and interactive elements */
@@ -74,6 +75,10 @@ textarea:not([rows]) {
 :target {
   scroll-margin-block: 5ex;
 }
+@font-face {
+    font-family: Norse;
+    src: url(font/Norse-Bold.otf);
+}
 .wrapper-page {
     display:flex;
 }
@@ -86,17 +91,18 @@ textarea:not([rows]) {
 }
 .text {
     flex: 2;
-    /* display:flex; */
-    justify-content: space-around;
-    /* align-items: center; */
+    justify-content: space-between;
     flex-direction: column;
     padding: 40px;
+    background-color: rgb(250, 249, 247);
 }
 fieldset{
     display: flex;
     width: min-content;
     margin-bottom: 50px;
     flex-wrap: wrap;
+    align-self: center;
+    border: 0;
 }
 
 h1{ 
@@ -104,9 +110,10 @@ h1{
     text-align: center;
     margin-top: 20vh;
     padding: 30px;
-    font-size: 70px;
+    font-size: 60px;
     background-color: black;
     opacity: .7;
+    font-family: Norse;;
 }
 #png {
     max-width: 20vw;
@@ -121,9 +128,46 @@ h1{
 }
 .paragraph {
     font-weight: bold;
-    font-size: larger;
+    font-size: large;
+    margin-top: 4em;
+}
+.paragraph2 {
+    font-weight: bold;
+    margin-bottom: 30px;;
 }
 
 .row {
     display: flex;
+    gap: 4em;
+}
+
+legend {
+    font-weight: bold;
+}
+button {
+    background-color: #596c49;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10%;
+    margin-top: 40px;
+    width: 150px;
+    font-size: small;
+}
+
+.form-group.password:invalid {
+    border: 1px red solid;
+}
+.form-group.password:valid {
+    border:1px black solid;
+}
+input {
+    border: 1px solid #E5E7EB;
+}
+input:focus {
+    border: 2px rgb(59, 59, 243) solid;
+    box-shadow: 1px 1px 1px;
+}
+label {
+    font-size: small;
 }
